@@ -1,0 +1,20 @@
+Package: RSegmentIO
+Type: Package
+Title: What the Package Does (Title Case)
+Version: 0.1.0
+Author: Andrew Conrad
+Maintainer: Andrew Conrad <andrewconrad@sloan.mit.edu>
+Description: 
+    Provides an interface for Segment.com (formally Segment.IO).
+    Currently, You can make identify calls for Segment.
+License: GPL-3
+Encoding: UTF-8
+LazyData: true
+Suggests: testthat
+Imports:
+    base64enc,
+    httr,
+    methods,
+    rjson,
+    xml2
+RoxygenNote: 6.0.1
