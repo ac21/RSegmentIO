@@ -4,6 +4,7 @@ send <- function(cli, end_point, body = NULL) {
     httr::add_headers( get_headers(cli) ),
     body = body
   )
+  Sys.sleep(1/50)  #prevent running more than 50 per second
 }
 
 

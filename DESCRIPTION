@@ -1,7 +1,7 @@
 Package: RSegmentIO
 Type: Package
 Title: Segment.com SDK for R
-Version: 0.2.0
+Version: 0.2.1
 Author: Andrew Conrad
 Maintainer: Andrew Conrad <andrewconrad@sloan.mit.edu>
 Description: 
