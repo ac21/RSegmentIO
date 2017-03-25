@@ -4,22 +4,20 @@
 \alias{identify}
 \title{Create a client connection to the Sittercity API}
 \usage{
-identify(client, userId, traits = list())
+identify(userId, traits = list(), cli = client())
 }
 \arguments{
-\item{client}{the Segment.IO client [created from ::client]}
-
 \item{userId}{a unique string to identify user who should be identified}
 
 \item{traits}{a list of items to write as traits of the provided user}
+
+\item{cli}{the Segment.IO client [created from ::client]}
 }
 \description{
 Create a client connection to the Sittercity API
 }
 \examples{
-cli <- client()
 identify(
-  client = cli,
   userId = 'fake_uuid',
   traits = list(status = 'closed')
 )

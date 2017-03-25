@@ -1,21 +1,19 @@
 #' Create a client connection to the Sittercity API
 #'
 #' @export
-#' @param client the Segment.IO client [created from ::client]
 #' @param userId a unique string to identify user who should be identified
 #' @param traits a list of items to write as traits of the provided user
+#' @param cli the Segment.IO client [created from ::client]
 #' @examples
-#' cli <- client()
 #' identify(
-#'   client = cli,
 #'   userId = 'fake_uuid',
 #'   traits = list(status = 'closed')
 #' )
-identify <- function(client, userId, traits = list() ) {
+identify <- function(userId, traits = list(), cli = client() ) {
   end_point <- '/v1/identify'
 
   result <- send(
-    client = client,
+    cli = cli,
     end_point = end_point,
     body = prepare_data(userId, traits)
   )

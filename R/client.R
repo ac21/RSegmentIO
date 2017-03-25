@@ -23,7 +23,7 @@ setClass(
 #' client(
 #'   writekey = 'fake_key'
 #' )
-client <- function(url = 'https://api.segment.io', writekey = "", debugging = FALSE) {
+client <- function(url = 'https://api.segment.io', writekey = Sys.getenv("SEGMENT_WRITEKEY"), debugging = FALSE) {
   client <- methods::new("SegmentIOClient")
   client@authorization = paste("Basic", base64enc::base64encode( charToRaw(paste0(writekey, ":"))))
   client@base_url = url

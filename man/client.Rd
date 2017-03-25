@@ -4,7 +4,8 @@
 \alias{client}
 \title{Create a client connection to the Segment.IO API}
 \usage{
-client(url = "https://api.segment.io", writekey = "", debugging = FALSE)
+client(url = "https://api.segment.io",
+  writekey = Sys.getenv("SEGMENT_WRITEKEY"), debugging = FALSE)
 }
 \arguments{
 \item{url}{The URL to the Segment.IO API service}
