@@ -21,7 +21,7 @@ SEGMENT_WRITEKEY="valid-write-key"
 To setup local environmental variables just for a given R package, you can create a .Renviron file and store the above variables
 
 
-## Using RSittercitySemgnet
+## Usage
 
 ### Call Identify
 ```R
