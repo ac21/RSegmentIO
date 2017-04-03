@@ -9,7 +9,7 @@ A consistent and safe way to interact with Segment.com (formally Segment.IO)
 Add library to your local project
 ```R
 devtools::install_github("ac21/RSegmentIO")
-library(RSittercitySegment)
+library(RSegmentIO)
 ```
 
 ### 2) Setup Environmental Variables
