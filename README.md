@@ -14,7 +14,7 @@ library(RSittercitySegment)
 
 ### 2) Setup Environmental Variables
 ```
-CH_SEGMENT_WRITEKEY="valid-write-key"
+SEGMENT_WRITEKEY="valid-write-key"
 ```
 
 #### Configuring project-only environmental variables for RStudio
